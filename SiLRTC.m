@@ -1,6 +1,4 @@
 function [X, difference_S] = SiLRTC(T,Omega,alpha,beta,maxIteration,epsilon)
-%SILRTC Summary of this function goes here
-%   Detailed explanation goes here
 X = T;
 X(logical(1-Omega)) = mean(T(Omega));
 %[X] = equatematrix(X,T,Omega);
