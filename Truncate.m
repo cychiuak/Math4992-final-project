@@ -1,8 +1,5 @@
 function [X, Sigma2] = Truncate(Z, tau)
-% [Y, n, Sigma2] = Pro2TraceNorm(Z, tau);
-% X = Z-Y;
 
-%% new
 [m, n] = size(Z);
 if 2*m < n
     AAT = Z*Z';
