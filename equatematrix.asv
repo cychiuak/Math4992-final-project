@@ -1,0 +1,16 @@
+function [X,T] = equatematric(X,T,Omega)
+dim = ndims(X);
+x1 = unfold(X,dim,1);
+t1 = unfold(T,dim,1);
+o1 = unfold(Omega,dim,1);
+[m,n] = size(x1);
+for i = 1:m
+    for j = 1:n
+        if(o1[m,n] == 1)
+            x1[m][n] = 
+        end
+    end
+end
+
+end
+
